@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple.com</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+    <style>
+      #ph{
+        width: 100%;
+        height: 1200px;
+        border: 1px solid red;
+        background-color: #3f463a;
+      }
+      #com{
+        width: 100%;
+        height: 1000px;
+        border: 1px solid black;
+        margin: auto;
+        background-image: url("https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/a1/fb/e7/a1fbe76c-a6b8-248b-e19a-63bc94588caf/0ab1a582-f500-4585-a68e-5c5c7c6e1b7c.png/739x1312sr.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       #nav{
+        width: 99%;
+        height: 50px;
+        background-color:black;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        /* left: 0px; */
+    
+       }
+       #tv{
+        width: 10%;
+        height: 50px;
+        margin-left: 10px;
+        position: relative;
+        top: 2px;
+    }
+    #img1{
+        width:100%
+    }
+    #searchsign{
+        display: flex;
+        /* border: 3px solid greenyellow; */
+        width: 30%;
+        height: 40px;
+
+    }
+    #search{
+        width:50%;
+        height: 12px;
+        padding:8px;
+        padding-left: 25px;
+        position: relative;
+        left: 85px;
+        top:5px;
+        border-radius: 5px;
+        border: none;
+    }
+    #lens{
+        font-size: 22px;
+        position: relative;
+        right: 90px;
+        top: 8px;
+    }
+    #sigin {
+        font-size: 15px;
+        background-color: #007aff;
+        padding: 5px 10px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 2px;
+        right: 15px;
+        border-radius: 10px;
+        width: 10%;
+      }
+      #icon {
+        width:25%;
+        height: 20px;
+      }
+      #log {
+        width: 50%;
+        height: 550px;
+        /* border: 3px solid red; */
+        display: none;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        top: 50px;
+      }
+      .material-symbols-outlined {
+        color: black;
+      }
+      #material {
+        color: white;
+        position: relative;
+        right: 45px;
+      }
+      #apple {
+        width: 70%;
+        height: 400px;
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 50px;
+      }
+      #inner {
+        display: flex;
+        align-items: center;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #inner > img {
+        width: 15%;
+        height: 60px;
+        color: black;
+      }
+      #apple > h2,
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #logindata {
+        width: 60%;
+        height: 40px;
+        position: relative;
+        left: 90px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border: none;
+        top: 10px;
+        padding-left: 15px;
+        font-size: 17px;
+      }
+      #applesearch {
+        width: 100%;
+        height: 80px;
+        /* border: 1px solid blue; */
+        margin: auto;
+      }
+      #arrow {
+        position: relative;
+        left: 60px;
+        top: 17px;
+      }
+      #logindata:focus {
+        outline: none;
+        border: 2px solid rgb(84, 84, 226);
+      }
+      #create {
+        width: 70%;
+        height: 100px;
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 30px;
+        /* display: flex; */
+        text-align: center;
+        justify-content: center;
+        line-height: 10px;
+      }
+      h4 {
+        color: #287ed4;
+      }
+      h4:hover {
+        text-decoration: underline;
+      }
+      #info>p ,h1{
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 5px;
+      }
+      #info>h1{
+        font-size: 70px;
+      }
+      #info>p{
+        font-size:17px;
+      }
+      
+      #info{
+        width:50%;
+        /* height: 200p; */
+        color:white;
+        position: relative;
+        top: 300px;
+        border: 1px solid red;
+        left: 30%;
+      }
+      #btn{
+        position: relative;
+        left: 250px;
+        padding:10px 30px;
+        border-radius: 10px;
+        font-size: 15px;
+      }
+      #btn:hover{
+        background-color: #aebba6;
+        
+      }
+    </style>
+</head>
+<body>
+    <div id="ph">
+        <div id="nav">
+            <div id="img1">
+                <img id="tv" src="https://images.indianexpress.com/2022/02/apple-tv-plus-1200by667.png" alt="">
+            </div>
+            <div id="searchsign">
+                <input type="text" id="search" placeholder="Search">
+                <span id="lens" class="material-symbols-outlined">search</span>
+            </div>
+            <button id="sigin" onclick="show()">
+                <img id="icon"src="https://cdn-icons-png.flaticon.com/128/3237/3237472.png" alt=""/>Sign In
+            </button>
+        </div>
+        <div id="log">
+            <span class="material-symbols-outlined" onclick="hide()"> close </span>
+            <div id="apple">
+              <div id="inner">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png" alt=""/>
+              </div>
+              <h2>Sign in with your Apple ID</h2>
+              <p>You will be signed in to Apple TV and Apple Music</p>
+              <div id="applesearch">
+                <input type="text" id="logindata" placeholder="Apple ID" />
+                <span class="material-symbols-outlined" id="arrow">arrow_circle_right</span>
+              </div>
+              <div id="create">
+                  <h4>Create New Apple ID >></h4>
+                  <h4>Forgot Apple ID Or Password?</h4>
+              </div>
+            </div>
+          </div>
+          <div id="com">
+            <div id="info">
+                <h1>All Apple Originals.</h1>
+                <p>Exclusily On Apple TV+ Watch here and on the Apple TV app across Your Devices</p>
+                <a href="">
+                  <button id="btn">Start Free Trial</button>
+                </a>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
+<script> let show = () => {
+    console.log("show");
+    let log = document.querySelector("#log");
+    log.style.display = "block";
+  };
+  let hide = () => {
+    console.log("hide");
+    let log = document.querySelector("#log");
+    log.style.display = "none";
+  };
+</script>
