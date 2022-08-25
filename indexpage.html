@@ -10,14 +10,14 @@
     <style>
       #ph{
         width: 100%;
-        height: 1200px;
-        border: 1px solid red;
+        height: 700px;
+        /* border: 1px solid red; */
         background-color: #3f463a;
       }
       #com{
         width: 100%;
-        height: 1000px;
-        border: 1px solid black;
+        height: 700px;
+        /* border: 1px solid black; */
         margin: auto;
         background-image: url("https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/a1/fb/e7/a1fbe76c-a6b8-248b-e19a-63bc94588caf/0ab1a582-f500-4585-a68e-5c5c7c6e1b7c.png/739x1312sr.jpg");
         background-repeat: no-repeat;
@@ -60,13 +60,21 @@
         left: 85px;
         top:5px;
         border-radius: 5px;
-        border: none;
+        /* border: none; */
+        background-color: black;
+        color: white;
     }
+    #search:focus {
+        outline: none;
+        border: 2px solid rgb(84, 84, 226);
+      }
+
     #lens{
         font-size: 22px;
         position: relative;
         right: 90px;
         top: 8px;
+        color: white;
     }
     #sigin {
         font-size: 15px;
@@ -143,6 +151,10 @@
         padding-left: 15px;
         font-size: 17px;
       }
+      #logindata:focus {
+        outline: none;
+        border: 2px solid rgb(84, 84, 226);
+      }
       #applesearch {
         width: 100%;
         height: 80px;
@@ -156,7 +168,7 @@
       }
       #logindata:focus {
         outline: none;
-        border: 2px solid rgb(84, 84, 226);
+        /* border: 2px solid rgb(84, 84, 226); */
       }
       #create {
         width: 70%;
@@ -176,7 +188,7 @@
         text-decoration: underline;
       }
       #info>p ,h1{
-        border: 1px solid black;
+        /* border: 1px solid black; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -195,20 +207,92 @@
         color:white;
         position: relative;
         top: 300px;
-        border: 1px solid red;
-        left: 30%;
+        /* border: 1px solid red; */
+        left: 25%;
       }
       #btn{
         position: relative;
-        left: 250px;
+        left: 220px;
         padding:10px 30px;
         border-radius: 10px;
         font-size: 15px;
+        border: 0px;
       }
       #btn:hover{
         background-color: #aebba6;
+
         
       }
+      #channel{
+        width: 97%;
+        height: 150px;
+        /* border: 1px solid red; */
+        margin:auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        padding-bottom: 25px;
+
+      }
+      .link{
+        /* border: 1px solid blue; */
+        width: 19%;
+        display: flex;
+      }
+      .link1{
+         /* border: 1px solid blue; */
+         width: 19%;
+      }
+
+      .img1{
+        width:100%;
+        border-radius: 10px;
+        height: 150px;
+      }
+      .img2{
+        width: 245px;
+        height: 150px;
+        border-radius: 10px;
+      }
+      .img3{
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+      }
+      #left{
+       justify-content: left;
+       margin-left:20px ;
+       /* font-size: 20px; */
+      }
+      .img3:hover{
+        width:auto;
+        height: 170px;
+      }
+      .img2:hover{
+        width:250px;
+
+        height: 170px;
+      }
+      .img1:hover{
+        width:auto;
+        height: 170px;
+      }
+      #emmy{
+        width: 97%;
+        height: 150px;
+        /* border: 1px solid red; */
+        margin:auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        padding-bottom: 25px;
+      }
+      #side{
+        padding-left: 15px;
+      }
+
     </style>
 </head>
 <body>
@@ -248,10 +332,101 @@
                 <h1>All Apple Originals.</h1>
                 <p>Exclusily On Apple TV+ Watch here and on the Apple TV app across Your Devices</p>
                 <a href="">
-                  <button id="btn">Start Free Trial</button>
+                  <button id="btn"><b>Start Free Trial</b> </button>
                 </a>
             </div>
           </div>
+    </div>
+    <h3 id="left">Most Popular Now</h3>
+    <div id="channel">
+        <div class="link">
+          <a href="https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy">
+            <img class="img1" src="https://preview.redd.it/52xpt2uu4mi71.jpg?auto=webp&s=b5d99af421a461565f53b8ec5e96bf98d21a3a35"alt="">
+          </a>
+        </div>
+      
+      <div class="link">
+        <a href="https://tv.apple.com/us/show/bad-sisters/umc.cmc.14kr4vv65unannh7doqgvlh20"><img class="img2" src="https://m.media-amazon.com/images/M/MV5BNjc2ZWY3NjYtM2Q5OS00YTI1LTk5MDktYjYwYTk2Yzc4YTc4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt=""> </a>
+      </div>
+      <div class="link">
+        <a href="https://tv.apple.com/us/show/black-bird/umc.cmc.30gx1y8nwthydkrvhqu156p3">
+          <img class="img3" src="https://i.ytimg.com/vi/aH1FOkJys3Y/maxresdefault.jpg" alt="">
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://tv.apple.com/us/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7">
+          <img class="img3" src="https://i.ytimg.com/vi/M4EOW9oqZ4k/maxresdefault.jpg" alt="">
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://tv.apple.com/us/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx">
+          <img class="img3" src="https://flxt.tmsimg.com/assets/p21271543_b_h8_ab.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <h3 id="side">Emmy & Nomines</h3>
+    <div id="emmy">
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy?ctx_brand=tvs.sbd.4000">
+            <img class="img3" src="https://s.numrush.nl/wp-content/uploads/2021/03/Apple_TV_Ted_Lasso_key_art_16_9-1024x576.jpg" alt="">
+          </a>
+        </div>
+
+
+        <div class="link1"><a href="https://tv.apple.com/us/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://media.vanityfair.com/photos/6234aca031894a79dcc891b7/16:9/w_2831,h_1592,c_limit/ATV_Severance_Photos_010605.jpg" alt="">
+        </a></div>
+
+
+        <div class="link1"><a href="https://tv.apple.com/us/show/the-morning-show/umc.cmc.25tn3v8ku4b39tr6ccgb8nl6m?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://www.apple.com/tv-pr/articles/2022/01/global-hit-series-the-morning-show-starring-and-executive-produced-by-jennifer-aniston-and-reese-witherspoon-renewed-for-season-three/images/big-image/big-image-01/011021_The_Morning_Show_Renewed_Season_Three_Big_Image_01_big_image_post.jpg.large.jpg" alt="">
+        </a></div>
+
+
+        <div class="link1"><a href="https://tv.apple.com/us/show/schmigadoon/umc.cmc.1tqmf2znhr4oui4vo69ircyui?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2021%2F06%2F01%2Fhow-to-walk-for-weight-loss.jpg" alt="">
+        </a></div>
+
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob?ctx_brand=tvs.sbd.4000"><img class="img3" src="https://flxt.tmsimg.com/assets/p19922669_b_h8_ac.jpg" alt=""></a>
+        </div>
+      </a>
+    </div>
+
+    <h3 id="side">Emmy & Nomines</h3>
+    <div id="emmy">
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/loot/umc.cmc.5erbujil1mpazuerhr1udnk45?ctx_brand=tvs.sbd.4000">
+            <img class="img3" src="https://media.idownloadblog.com/wp-content/uploads/2022/06/Apple-TV-Plus-Loot-banner.jpg" alt="">
+          </a>
+        </div>
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/trying/umc.cmc.6muy4la7lj1omu5nci4bt2m66?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://www.apple.com/tv-pr/shows-and-films/t/trying/images/season-03/show-home-graphic-header/key-art/ATV_Trying_key_art_graphic_header_4_1_show_home.jpg.og.jpg?1658431056087" alt="">
+        </a></div>
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/tehran/umc.cmc.337cdk1ou0bmn6frmzxwm7xqd?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://cdn.thetealmango.com/wp-content/uploads/2022/01/PicsArt_01-02-09.50.50.jpg" alt="">
+        </a></div>
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://www.showbizjunkies.com/wp-content/uploads/2021/12/invasion-season-2-poster-1280x720.png" alt="">
+        </a></div>
+
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/shining-girls/umc.cmc.22xs4xobsimzy5qqdif0rhmdy?ctx_brand=tvs.sbd.4000"><img class="img3" src="http://popculturemaniacs.com/wp-content/uploads/2022/04/Shining-girls-Apple.jpg" alt=""></a>
+        </div>
+      </a>
     </div>
 </body>
 </html>
