@@ -7,6 +7,7 @@
     <title>Apple TV+</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <style>
       #ph{
         width: 100%;
@@ -52,8 +53,8 @@
 
     }
     #search{
-        width:50%;
-        height: 12px;
+        width:60%;
+        height: 30px;
         padding:8px;
         padding-left: 25px;
         position: relative;
@@ -63,6 +64,7 @@
         /* border: none; */
         background-color: black;
         color: white;
+        /* font-size: 20px; */
     }
     #search:focus {
         outline: none;
@@ -72,9 +74,10 @@
     #lens{
         font-size: 22px;
         position: relative;
-        right: 90px;
+        right: 80px;
         top: 8px;
         color: white;
+        /* border: 1px solid blue; */
     }
     #sigin {
         font-size: 15px;
@@ -445,12 +448,13 @@
 }
 #black{
   width: 97%;
-  height: 700px;
+  height: 800px;
   border: 1px solid black;
   background-color: black;
   position: relative;
   top:100px;
   margin:auto;
+  line-height: 30px;
 }
 #black>img{
   width:20%;
@@ -460,16 +464,162 @@
 #here{
   color: white;
 }
-#black>p{
+
+#allimg{
+  width: 50%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#allimg>div{
+  width:18%;
+  height: 100px;
+  /* border: 1px solid white; */
+  
+}
+#allimg>div>img{
+  width: 100%;
+}
+.ptag{
   color: white;
+  font-size: 10px;
 }
-#black>p:last-child{
-  color: #245890;
+.img8{
+  width: 100%;
 }
-#black>p:last-child:hover{
+.ptag1{
+  color: white;
+  font-size: 10px;
+  position: relative;
+  bottom: 18px;
+}
+#big>b{
+  color: white;
+  font-size: 25px;
+  position: relative;
+  top:40px;
+}
+.supported{
+  color:#3b86d7;
+  font-size: 12px;
+}
+.supported:hover{
   text-decoration: underline;
 }
-    </style>
+#set{
+  position: relative;
+  top:30px;
+}
+#explore{
+  position: relative;
+  top:5px;
+}
+#lastimg{
+  width: 45%;
+  height: 160px;
+  /* border: 1px solid white; */
+  margin: auto;
+  display: flex;
+  justify-content:space-between;
+  color: white;
+}
+#lastimg>div{
+  width: 30%;
+  height: 100px;
+  /* border: 1px solid yellow; */
+}
+.lastimage>img{
+  width: 100%;
+  height:97px;
+}
+.str{
+  color: white;
+  position: relative;
+  bottom: 15px;
+  font-size: 15px;
+
+}
+.roku{
+  color:#969696;
+  position: relative;
+  bottom: 40px;
+  /* background-color: yellow; */
+  font-size: 15px;
+  line-height: 17px;
+}
+.roku1{
+  color: white;
+  position: relative;
+  top: 50px;
+  font-size: 10px;
+}
+#fotter{
+  width: 70%;
+  height: 500px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 100px;
+ text-align: center;
+}
+#fotter>div>p{
+  display: none;
+}
+#fotter>div{
+  padding: 1px 0px;
+  text-align: left;
+  /* border: 1px solid red; */
+
+}
+
+.arrow_down{
+  position: relative;
+  left: 280px;
+}
+.arrow_down1{
+  position: relative;
+  left: 225px;
+}
+.arrow_down2{
+  position: relative;
+  left: 90px;
+}
+.arrow_down4{
+  position: relative;
+  left: 90px;
+}
+.arrow_down3{
+  position: relative;
+  left: 185px;
+}
+.arrow_down5{
+  position: relative;
+  left: 220px;
+}
+.arrow_down6{
+  position: relative;
+  left: 220px;
+}
+.arrow_down7{
+  position: relative;
+  left: 220px;
+}
+.arrow_down8{
+  position: relative;
+  left: 275px;
+}
+.arrow_down9{
+  position: relative;
+  left: 245px;
+}
+.hi{
+  font-size: 25px;
+  color: #333333;
+}
+#ans{
+  font-size: 45px;
+}
+</style>
 </head>
 <body>
     <div id="ph">
@@ -571,7 +721,7 @@
       </a>
     </div>
 
-    <h3 id="side">Emmy & Nomines</h3>
+    <h3 id="side">Watch Entire Season</h3>
     <div id="emmy">
         <div class="link1">
           <a href="https://tv.apple.com/us/show/loot/umc.cmc.5erbujil1mpazuerhr1udnk45?ctx_brand=tvs.sbd.4000">
@@ -612,8 +762,8 @@
           </a>
           <h5>DRAMA</h5>
           <h5>Bad Sister</h5>
-          <p>A tight-knit clan of sisters is investigated
-            for the death of their toxic brother-in-law.</p>
+          <p><i>A tight-knit clan of sisters is investigated
+            for the death of their toxic brother-in-law.</i> </p>
         </div>
 
 
@@ -622,8 +772,8 @@
           <img class="img3" src="https://cartermatt.com/wp-content/uploads/2022/08/Surfside-Girls.webp" alt=""></a>
           <h5>MYSTERY</h5>
           <h5>Surfside Girls</h5>
-          <p>Beachside best friends investigate a series of
-            supernatural mysteris.</p>
+          <p><i>Beachside best friends investigate a series of
+            supernatural mysteris.</i></p>
         </div>
 
 
@@ -632,8 +782,8 @@
           <img class="img3" src="https://flxt.tmsimg.com/assets/p22430853_b_h8_ab.jpg" alt=""></a>
           <h5>DRAMA</h5>
           <h5>Five days Memorials</h5>
-          <p>A tight-knit clan of sisters is investigated
-            for the death of their toxic brother-in-law.</p>
+          <p><i>A tight-knit clan of sisters is investigated
+            for the death of their toxic brother-in-law.</i></p>
         </div>
 
 
@@ -642,8 +792,8 @@
           <img class="img3" src="https://i.ytimg.com/vi/J35ka2RmbkA/maxresdefault.jpg" alt=""></a>
           <h5>KIDS & FAMILY</h5>
           <h5>Lucy's School</h5>
-          <p>Lucky learns that teaching is tougher than 
-            she thought is this love letter to education</p>
+          <p><i>Lucky learns that teaching is tougher than 
+            she thought is this love letter to education</i></p>
         </div>
 
 
@@ -652,8 +802,8 @@
           <a href="https://tv.apple.com/us/show/shining-girls/umc.cmc.22xs4xobsimzy5qqdif0rhmdy?ctx_brand=tvs.sbd.4000"><img class="img3" src="https://i.ytimg.com/vi/k31Zgou-5fw/maxresdefault.jpg" alt=""></a>
           <h5>KIDS & FAMILY</h5>
           <h5>The Snoopy Show</h5>
-          <p>The World -famous beagle is back for a new
-            season of adventure with his pals.</p>
+          <p><i>The World -famous beagle is back for a new
+            season of adventure with his pals.</i></p>
         </div>
     </div>
     <h3 id="but">Commonig soon</h3>
@@ -772,7 +922,160 @@
         <img src="https://www.apple.com/v/apple-tv-plus/ab/images/meta/apple-tv__e7aqjl2rqzau_og.png" alt="">
         <h1 id="here">Watch Apple TV+ here or anywhere.</h1>
         <p>Find Apple TV+ on the Apple TV app , available on Apple devices, smart TVs, and more.</p>
-        <p>See all supported devices ></p>
+        <p class="supported">See all supported devices ></p>
+        <div id="allimg">
+          <div>
+            <a href=""><img class="img8" src="https://bazarganisib.com/wp-content/uploads/2020/01/Tv.jpg" alt="">
+            </a>
+            <p class="ptag">Apple TV+</p>
+          </div>
+          <div>
+            <a href=""><img class="img8" src="https://witi.com/img/charging.png" alt="">
+            </a>
+            <p class="ptag">iPhone</p>
+          </div>
+          <div>
+            <a href=""><img class="img8" src="https://ak5.picdn.net/shutterstock/videos/7812115/thumb/3.jpg" alt="">
+            </a>
+            <p class="ptag">iPad</p>
+          </div>
+          <div>
+            <a href=""><img class="img8" src="https://as2.ftcdn.net/v2/jpg/02/63/51/95/1000_F_263519536_GO50i8nK2uFH5R5umRjBBndFD32phv5o.jpg" alt="">
+            </a>
+            <p class="ptag1">Mac</p>
+          </div>
+          <div>
+            <a href=""><img class="img8" src="https://cdn-60c35131c1ac185aa47dd21e.closte.com//wp-content/uploads/2017/03/Apple-AirPlay-Icon.jpg" alt="">
+            </a>
+            <p class="ptag1">AirPlay</p>
+          </div>
+        </div>
+        <p id="big"><b>See it on Your big screen .</b></p>
+        <p class="supported" id="set">Set up your device ></p>
+        <p class="supported" id="explore">Explore compactable device ></p>
+
+        <div id="lastimg">
+          <div class="lastimage">
+            <img src="https://static.wixstatic.com/media/3888be_023c3a995eca407b9e89d775151c55f8~mv2.jpg/v1/fill/w_395,h_330,al_c,q_85/3888be_023c3a995eca407b9e89d775151c55f8~mv2.jpg" alt="">
+            <h4 class="str">Streaming Devices</h4>
+            <p class="roku">Roku <br>Fire tv <br> Google Tv <br> Android Tv
+            </p>
+          </div>
+          <div class="lastimage">
+            <img src="https://percipient.co/wp-content/uploads/2021/08/Forensic-Imaging-of-Hard-Drive-Percipient-1200x675.png" alt="">
+            <h4 class="str">Smart TVs </h4>
+            <p class="roku">Samsung <br>LG <br> VIZIO <br>Sony
+            </p>
+          </div>
+          <div class="lastimage">
+            <img src="https://www.pngkey.com/png/full/460-4605662_gaming-icon-png-white.png" alt="">
+            <h4 class="str">Gaming Consoles</h4>
+            <p class="roku">PlayStation<br>Xbox <br> 
+            </p>
+          </div>
+        </div>
+        <p class="roku1">Device availability varies by country or region.</p>
+      </div>
+     
+      <div id="fotter">
+        <h2 id="ans">Question? Answer.</h2>
+        <div>
+          <h1 class="hi" onclick="footer1()">What is the Apple Tv+? <i class="fa-solid fa-chevron-down arrow_down"></i></h1>
+          <p  id="footer_p1">Apple TV+ is a streaming service from Apple .
+            It features exclusive Apple Origional shows and movies from some of the
+             industry's top talent with new premieres arriving each month.
+            Browse all of the available content on Apple TV+ inside the 
+            Apple TV app on the "Apple TV+"tab or here on tv.apple.com .</p>
+        </div>
+        <hr>
+        <div>
+          <h1 class="hi" onclick="footer2()">What does Apple TV+ include.? <i class="fa-solid fa-chevron-down arrow_down1"></i></h1>
+          <p  id="footer_p2">Apple TV+ include Apple Origional filims and series-which 
+            are origional shows and movies made exclusively for Apple .
+            It also includes free access for anyone for anyone to watch 
+            Friday night baseball,provide throw Apple TV+ in partenership 
+            with MLB {Major League Baseball}. New shows and movies are
+            being added to the streaming service often,so browse inside
+            the Aplle TV app or visit tv.apple.com often to see new 
+            releases.</p>
+        </div>
+        <hr>
+        <div>
+          <h1 class="hi" onclick="footer3()">How to watch Apple TV+ on Android or Windows? <i class="fa-solid fa-chevron-down arrow_down2"></i></h1>
+          <p  id="footer_p3">Apple TV+is an exclusive streaming subscription available in
+            the Aplle TV app .you can find Apple TV app on many of your 
+            favorite Apple devices. Plus,find the app on many smart TVs,
+             streming devices,game consoles,and some select cable boxes.</p>
+        </div>
+        <hr>
+        <div>
+          <h1 class="hi" onclick="footer4()">CanI watch Apple TV+ on my phone ? <i class="fa-solid fa-chevron-down arrow_down3"></i></h1>
+          <p  id="footer_p4">Apple TV+ is a streaming service that lives inside 
+            the Apple TV app-an app thatbrings Apple TV+ together with
+            other streaming servicee subscriptions tha you add. 
+            You can find the Apple TV app on iPhone ,iPad,
+             Apple Tv 4K or HD, plus on many streaming devices and
+             smart TVs like Roku,Sumsung,LG Panasonic,and more.
+            </p>
+        </div>
+        <hr>
+        <div>
+          <h1 class="hi" onclick="footer5()">How to watch Apple TV+ on Android or Windows ? <i class="fa-solid fa-chevron-down arrow_down4"></i></h1>
+          <p  id="footer_p5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio veritatis facilis minima, culpa iste provident distinctio, nulla aliquam eaque quia et. Odit molestiae et officiis! Nesciunt illum eius unde fugit.</p>
+        </div>
+        <hr>
+
+        <div>
+          <h1 class="hi" onclick="footer6()">What Movies are on Apple TV+? <i class="fa-solid fa-chevron-down arrow_down5"></i></h1>
+          <p  id="footer_p6"> The easiest way to wath Apple TV+ on an Android phone or
+            Windows device is to visit tv.apple.com.There, you can still
+           sign in with an Apple ID, add aaaaaaaApple Origional shows and
+           movies to your Up Next watchlist, and keep track of what 
+           you're watching .</p>
+        </div>
+        <hr>
+
+        <div>
+          <h1 class="hi" onclick="footer7()">What Movies are on Apple TV+? <i class="fa-solid fa-chevron-down arrow_down6"></i></h1>
+          <p  id="footer_p7">The easiest way to wath Apple TV+ on an Android phone or
+            Windows device is to visit tv.apple.com.There, you can still
+           sign in with an Apple ID, add aaaaaaaApple Origional shows and
+           movies to your Up Next watchlist, and keep track of what 
+           you're watching </p>
+        </div>
+        <hr>
+
+        <div>
+          <h1 class="hi" onclick="footer8()">What can I watch on apple TV+? <i class="fa-solid fa-chevron-down arrow_down7"></i></h1>
+          <p  id="footer_p8">Apple TV+ is a streaming service that lives inside 
+            the Apple TV app-an app thatbrings Apple TV+ together with
+            other streaming servicee subscriptions tha you add. 
+            You can find the Apple TV app on iPhone ,iPad,
+             Apple Tv 4K or HD, plus on many streaming devices and
+             smart TVs like Roku,Sumsung,LG Panasonic,and more.</p>
+        </div>
+        <hr>
+
+        <div>
+          <h1 class="hi" onclick="footer9()">How do i get Apple Tv+? <i class="fa-solid fa-chevron-down arrow_down8"></i></h1>
+          <p  id="footer_p9">Apple TV+ is a streaming service from Apple .
+            It features exclusive Apple Origional shows and movies from some of the
+             industry's top talent with new premieres arriving each month.
+            Browse all of the available content on Apple TV+ inside the 
+            Apple TV app on the "Apple TV+"tab or here on tv.apple.com .</p>
+        </div>
+        <hr>
+
+        <div>
+          <h1 class="hi" onclick="footer10()">Can i get Apple TV+ for free? <i class="fa-solid fa-chevron-down arrow_down9"></i></h1>
+          <p  id="footer_p10">Apple TV+ is a streaming service that lives inside 
+            the Apple TV app-an app thatbrings Apple TV+ together with
+            other streaming servicee subscriptions tha you add. 
+            You can find the Apple TV app on iPhone ,iPad,
+             Apple Tv 4K or HD, plus on many streaming devices and
+             smart TVs like Roku,Sumsung,LG Panasonic,and more.</p>
+        </div>
+        <hr>
       </div>
 </body>
 </html>
@@ -813,4 +1116,148 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+num1=0
+
+let footer1=()=>{
+
+  num1++
+  if(num1%2==1){
+    document.querySelector("#footer_p1").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p1").style.display="none"
+  }
+
+
+}
+num2=0
+
+let footer2=()=>{
+
+  num2++
+  if(num2%2==1){
+    document.querySelector("#footer_p2").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p2").style.display="none"
+  }
+
+
+}
+num3=0
+
+let footer3=()=>{
+
+  num3++
+  if(num3%2==1){
+    document.querySelector("#footer_p3").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p3").style.display="none"
+  }
+
+
+}
+
+num4=0
+
+let footer4=()=>{
+
+  num4++
+  if(num4%2==1){
+    document.querySelector("#footer_p4").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p4").style.display="none"
+  }
+
+
+}
+num5=0
+
+let footer5=()=>{
+
+  num5++
+  if(num5%2==1){
+    document.querySelector("#footer_p5").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p5").style.display="none"
+  }
+
+
+}
+num6=0
+
+let footer6=()=>{
+
+  num6++
+  if(num6%2==1){
+    document.querySelector("#footer_p6").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p6").style.display="none"
+  }
+
+
+}
+num7=0
+
+let footer7=()=>{
+
+  num7++
+  if(num7%2==1){
+    document.querySelector("#footer_p7").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p7").style.display="none"
+  }
+
+
+}
+
+num8=0
+
+let footer8=()=>{
+
+  num8++
+  if(num8%2==1){
+    document.querySelector("#footer_p8").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p8").style.display="none"
+  }
+
+
+}
+num9=0
+
+let footer9=()=>{
+
+  num9++
+  if(num9%2==1){
+    document.querySelector("#footer_p9").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p9").style.display="none"
+  }
+
+
+}
+num10=0
+
+let footer10=()=>{
+
+  num5++
+  if(num10%2==1){
+    document.querySelector("#footer_p10").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p10").style.display="none"
+  }
+
+
+}
+
 </script>
