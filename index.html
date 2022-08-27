@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple TV+</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+      #ph{
+        width: 100%;
+        height: 700px;
+        /* border: 1px solid red; */
+        background-color: #3f463a;
+      }
+      #com{
+        width: 100%;
+        height: 700px;
+        /* border: 1px solid black; */
+        margin: auto;
+        background-image: url("https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/a1/fb/e7/a1fbe76c-a6b8-248b-e19a-63bc94588caf/0ab1a582-f500-4585-a68e-5c5c7c6e1b7c.png/739x1312sr.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       #nav{
+        width: 100%;
+        height: 50px;
+        background-color:black;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        /* left: 0px; */
+    
+       }
+       #tv{
+        width: 10%;
+        height: 46px;
+        margin-left: 10px;
+        position: relative;
+        top: 2px;
+    }
+    #img1{
+        width:100%
+    }
+    #searchsign{
+        display: flex;
+        /* border: 3px solid greenyellow; */
+        width: 30%;
+        height: 40px;
+
+    }
+    #search{
+        width:60%;
+        height: 30px;
+        padding:8px;
+        padding-left: 25px;
+        position: relative;
+        left: 85px;
+        top:5px;
+        border-radius: 5px;
+        /* border: none; */
+        background-color: black;
+        color: white;
+        /* font-size: 20px; */
+    }
+    #search:focus {
+        outline: none;
+        border: 2px solid rgb(84, 84, 226);
+      }
+
+    #lens{
+        font-size: 22px;
+        position: relative;
+        right: 80px;
+        top: 8px;
+        color: white;
+        /* border: 1px solid blue; */
+    }
+    #sigin {
+        font-size: 15px;
+        background-color: #007aff;
+        padding: 5px 10px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 2px;
+        right: 15px;
+        border-radius: 10px;
+        width: 10%;
+      }
+      #icon {
+        width:25%;
+        height: 20px;
+      }
+      #log {
+        width: 50%;
+        height: 550px;
+        /* border: 3px solid red; */
+        display: none;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        top: 50px;
+      }
+      .material-symbols-outlined {
+        color: black;
+      }
+      #material {
+        color: white;
+        position: relative;
+        right: 45px;
+      }
+      #apple {
+        width: 70%;
+        height: 400px;
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 50px;
+      }
+      #inner {
+        display: flex;
+        align-items: center;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #inner > img {
+        width: 15%;
+        height: 60px;
+        color: black;
+      }
+      #apple > h2,
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #logindata {
+        width: 60%;
+        height: 40px;
+        position: relative;
+        left: 90px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border: none;
+        top: 10px;
+        padding-left: 15px;
+        font-size: 17px;
+      }
+      #logindata:focus {
+        outline: none;
+        border: 2px solid rgb(84, 84, 226);
+      }
+      #applesearch {
+        width: 100%;
+        height: 80px;
+        /* border: 1px solid blue; */
+        margin: auto;
+      }
+      #arrow {
+        position: relative;
+        left: 60px;
+        top: 17px;
+      }
+      #logindata:focus {
+        outline: none;
+        /* border: 2px solid rgb(84, 84, 226); */
+      }
+      #create {
+        width: 70%;
+        height: 100px;
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 30px;
+        /* display: flex; */
+        text-align: center;
+        justify-content: center;
+        line-height: 10px;
+      }
+      h4 {
+        color: #287ed4;
+      }
+      h4:hover {
+        text-decoration: underline;
+      }
+      #info>p ,h1{
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 5px;
+      }
+      #info>h1{
+        font-size: 50px;
+      }
+      #info>p{
+        font-size:15px;
+        /* border:1px solid red; */
+      }
+      
+      #info{
+        width:50%;
+        /* height: 200p; */
+        color:white;
+        position: relative;
+        top: 300px;
+        /* border: 1px solid red; */
+        left: 25%;
+      }
+      #btn{
+        position: relative;
+        left: 220px;
+        padding:10px 30px;
+        border-radius: 10px;
+        font-size: 15px;
+        border: 0px;
+      }
+      #btn:hover{
+        background-color: #aebba6;
+
+        
+      }
+      #channel{
+        width: 97%;
+        height: 150px;
+        /* border: 1px solid red; */
+        margin:auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        padding-bottom: 25px;
+
+      }
+      .link{
+        /* border: 1px solid blue; */
+        width: 19%;
+        display: flex;
+      }
+      .link1{
+         /* border: 1px solid blue; */
+         width: 19%;
+         line-height:0px;
+      }
+      .link1>p{
+        line-height: 15px;
+        position: relative;
+        bottom: 8px;
+      }
+
+      .img1{
+        width:100%;
+        border-radius: 10px;
+        height: 150px;
+      }
+      .img2{
+        width: 245px;
+        height: 150px;
+        border-radius: 10px;
+      }
+      .img3{
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+      }
+      #left{
+       justify-content: left;
+       margin-left:20px ;
+       /* font-size: 20px; */
+      }
+      .img3:hover{
+        width:auto;
+        height: 170px;
+      }
+      .img2:hover{
+        width:250px;
+
+        height: 170px;
+      }
+      .img1:hover{
+        width:auto;
+        height: 170px;
+      }
+      #emmy{
+        width: 97%;
+        height: 150px;
+        /* border: 1px solid red; */
+        margin:auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        padding-bottom: 25px;
+      }
+      #side{
+        padding-left: 15px;
+      }
+      #comming{
+        width: 97%;
+        height: 170px;
+        /* border: 1px solid rebeccapurple; */
+        position: relative;
+        top: 80px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      }
+      #comming>div{
+        width: 24%;
+        height: 170px;
+        /* border: 1px solid black; */
+        border-radius: 20px;
+      }
+      #but{
+        position: relative;
+        top: 95px;
+        left: 15px;
+      }
+      .img4{
+        width: 100%;
+        border-radius: 20px;
+      }
+      .img4:hover{
+        width: 105%;
+      }
+      #watch{
+        position: relative;
+        top: 85px;
+        font-size: 12px;
+        left: 15px;
+      }
+      .img5{
+        width: 100%;
+        height:170px ;
+        /* padding-left: 20px; */
+        /* margin-left: 10px;
+        margin-right: 20px; */
+        border-radius: 20px;
+      }
+      .img5:hover{
+        width: 105%;
+      }
+      * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width:1310px;
+  position: relative;
+  margin: auto;
+  top:110px;
+  border-radius: 20px;
+  /* border: 1px solid red; */
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.img7{
+  border-radius: 20px;
+}
+.text{
+  line-height: 20px;
+  color: white;
+}
+#black{
+  width: 97%;
+  height: 800px;
+  border: 1px solid black;
+  background-color: black;
+  position: relative;
+  top:100px;
+  margin:auto;
+  line-height: 30px;
+}
+#black>img{
+  width:20%;
+  position: relative;
+  left: 500px;
+}
+#here{
+  color: white;
+}
+
+#allimg{
+  width: 50%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#allimg>div{
+  width:18%;
+  height: 100px;
+  /* border: 1px solid white; */
+  
+}
+#allimg>div>img{
+  width: 100%;
+}
+.ptag{
+  color: white;
+  font-size: 10px;
+}
+.img8{
+  width: 100%;
+}
+.ptag1{
+  color: white;
+  font-size: 10px;
+  position: relative;
+  bottom: 18px;
+}
+#big>b{
+  color: white;
+  font-size: 25px;
+  position: relative;
+  top:40px;
+}
+.supported{
+  color:#3b86d7;
+  font-size: 12px;
+}
+.supported:hover{
+  text-decoration: underline;
+}
+#set{
+  position: relative;
+  top:30px;
+}
+#explore{
+  position: relative;
+  top:5px;
+}
+#lastimg{
+  width: 45%;
+  height: 160px;
+  /* border: 1px solid white; */
+  margin: auto;
+  display: flex;
+  justify-content:space-between;
+  color: white;
+}
+#lastimg>div{
+  width: 30%;
+  height: 100px;
+  /* border: 1px solid yellow; */
+}
+.lastimage>img{
+  width: 100%;
+  height:97px;
+}
+.str{
+  color: white;
+  position: relative;
+  bottom: 15px;
+  font-size: 15px;
+
+}
+.roku{
+  color:#969696;
+  position: relative;
+  bottom: 40px;
+  /* background-color: yellow; */
+  font-size: 15px;
+  line-height: 17px;
+}
+.roku1{
+  color: white;
+  position: relative;
+  top: 50px;
+  font-size: 10px;
+}
+#fotter{
+  width: 70%;
+  height: 500px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 100px;
+ text-align: center;
+}
+#fotter>div>p{
+  display: none;
+}
+#fotter>div{
+  padding: 1px 0px;
+  text-align: left;
+  /* border: 1px solid red; */
+
+}
+
+.arrow_down{
+  position: relative;
+  left: 280px;
+}
+.arrow_down1{
+  position: relative;
+  left: 225px;
+}
+.arrow_down2{
+  position: relative;
+  left: 90px;
+}
+.arrow_down4{
+  position: relative;
+  left: 90px;
+}
+.arrow_down3{
+  position: relative;
+  left: 185px;
+}
+.arrow_down5{
+  position: relative;
+  left: 220px;
+}
+.arrow_down6{
+  position: relative;
+  left: 220px;
+}
+.arrow_down7{
+  position: relative;
+  left: 220px;
+}
+.arrow_down8{
+  position: relative;
+  left: 275px;
+}
+.arrow_down9{
+  position: relative;
+  left: 245px;
+}
+.hi{
+  font-size: 25px;
+  color: #333333;
+}
+#ans{
+  font-size: 45px;
+}
+</style>
+</head>
+<body>
+    <div id="ph">
+        <div id="nav">
+            <div id="img1">
+                <img id="tv" src="https://images.indianexpress.com/2022/02/apple-tv-plus-1200by667.png" alt="">
+            </div>
+            <div id="searchsign">
+                <input type="text" id="search" placeholder="Search">
+                <span id="lens" class="material-symbols-outlined">search</span>
+            </div>
+            <button id="sigin" onclick="show()">
+                <img id="icon"src="https://cdn-icons-png.flaticon.com/128/3237/3237472.png" alt=""/>Sign In
+            </button>
+        </div>
+        <div id="log">
+            <span class="material-symbols-outlined" onclick="hide()"> close </span>
+            <div id="apple">
+              <div id="inner">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png" alt=""/>
+              </div>
+              <h2>Sign in with your Apple ID</h2>
+              <p>You will be signed in to Apple TV and Apple Music</p>
+              <div id="applesearch">
+                <input type="text" id="logindata" placeholder="Apple ID" />
+                <span class="material-symbols-outlined" id="arrow">arrow_circle_right</span>
+              </div>
+              <div id="create">
+                  <h4>Create New Apple ID >></h4>
+                  <h4>Forgot Apple ID Or Password?</h4>
+              </div>
+            </div>
+          </div>
+          <div id="com">
+            <div id="info">
+                <h1 id="hi">All Apple Originals.</h1>
+                <p>Exclusily On Apple TV+ Watch here and on the Apple TV app across Your Devices</p>
+                <a href="">
+                  <button id="btn"><b>Start Free Trial</b> </button>
+                </a>
+            </div>
+          </div>
+    </div>
+    <h3 id="left">Most Popular Now</h3>
+    <div id="channel">
+        <div class="link">
+          <a href="https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy">
+            <img class="img1" src="https://preview.redd.it/52xpt2uu4mi71.jpg?auto=webp&s=b5d99af421a461565f53b8ec5e96bf98d21a3a35"alt="">
+          </a>
+        </div>
+      
+      <div class="link">
+        <a href="https://tv.apple.com/us/show/bad-sisters/umc.cmc.14kr4vv65unannh7doqgvlh20"><img class="img2" src="https://m.media-amazon.com/images/M/MV5BNjc2ZWY3NjYtM2Q5OS00YTI1LTk5MDktYjYwYTk2Yzc4YTc4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt=""> </a>
+      </div>
+      <div class="link">
+        <a href="https://tv.apple.com/us/show/black-bird/umc.cmc.30gx1y8nwthydkrvhqu156p3">
+          <img class="img3" src="https://i.ytimg.com/vi/aH1FOkJys3Y/maxresdefault.jpg" alt="">
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://tv.apple.com/us/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7">
+          <img class="img3" src="https://i.ytimg.com/vi/M4EOW9oqZ4k/maxresdefault.jpg" alt="">
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://tv.apple.com/us/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx">
+          <img class="img3" src="https://flxt.tmsimg.com/assets/p21271543_b_h8_ab.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <h3 id="side">Emmy & Nomines</h3>
+    <div id="emmy">
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy?ctx_brand=tvs.sbd.4000">
+            <img class="img3" src="https://s.numrush.nl/wp-content/uploads/2021/03/Apple_TV_Ted_Lasso_key_art_16_9-1024x576.jpg" alt="">
+          </a>
+        </div>
+
+
+        <div class="link1"><a href="https://tv.apple.com/us/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://media.vanityfair.com/photos/6234aca031894a79dcc891b7/16:9/w_2831,h_1592,c_limit/ATV_Severance_Photos_010605.jpg" alt="">
+        </a></div>
+
+
+        <div class="link1"><a href="https://tv.apple.com/us/show/the-morning-show/umc.cmc.25tn3v8ku4b39tr6ccgb8nl6m?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://www.apple.com/tv-pr/articles/2022/01/global-hit-series-the-morning-show-starring-and-executive-produced-by-jennifer-aniston-and-reese-witherspoon-renewed-for-season-three/images/big-image/big-image-01/011021_The_Morning_Show_Renewed_Season_Three_Big_Image_01_big_image_post.jpg.large.jpg" alt="">
+        </a></div>
+
+
+        <div class="link1"><a href="https://tv.apple.com/us/show/schmigadoon/umc.cmc.1tqmf2znhr4oui4vo69ircyui?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2021%2F06%2F01%2Fhow-to-walk-for-weight-loss.jpg" alt="">
+        </a></div>
+
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob?ctx_brand=tvs.sbd.4000"><img class="img3" src="https://flxt.tmsimg.com/assets/p19922669_b_h8_ac.jpg" alt=""></a>
+        </div>
+      </a>
+    </div>
+
+    <h3 id="side">Watch Entire Season</h3>
+    <div id="emmy">
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/loot/umc.cmc.5erbujil1mpazuerhr1udnk45?ctx_brand=tvs.sbd.4000">
+            <img class="img3" src="https://media.idownloadblog.com/wp-content/uploads/2022/06/Apple-TV-Plus-Loot-banner.jpg" alt="">
+          </a>
+        </div>
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/trying/umc.cmc.6muy4la7lj1omu5nci4bt2m66?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://www.apple.com/tv-pr/shows-and-films/t/trying/images/season-03/show-home-graphic-header/key-art/ATV_Trying_key_art_graphic_header_4_1_show_home.jpg.og.jpg?1658431056087" alt="">
+        </a></div>
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/tehran/umc.cmc.337cdk1ou0bmn6frmzxwm7xqd?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://cdn.thetealmango.com/wp-content/uploads/2022/01/PicsArt_01-02-09.50.50.jpg" alt="">
+        </a></div>
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://www.showbizjunkies.com/wp-content/uploads/2021/12/invasion-season-2-poster-1280x720.png" alt="">
+        </a></div>
+
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/shining-girls/umc.cmc.22xs4xobsimzy5qqdif0rhmdy?ctx_brand=tvs.sbd.4000"><img class="img3" src="http://popculturemaniacs.com/wp-content/uploads/2022/04/Shining-girls-Apple.jpg" alt=""></a>
+        </div>
+      </a>
+    </div>
+    <h3 id="side">Latest Originals</h3>
+    <div id="emmy">
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/loot/umc.cmc.5erbujil1mpazuerhr1udnk45?ctx_brand=tvs.sbd.4000">
+            <img class="img3" src="https://i.ytimg.com/vi/IZUrhfCl0Xc/hqdefault.jpg" alt="">
+          </a>
+          <h5>DRAMA</h5>
+          <h5>Bad Sister</h5>
+          <p><i>A tight-knit clan of sisters is investigated
+            for the death of their toxic brother-in-law.</i> </p>
+        </div>
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/trying/umc.cmc.6muy4la7lj1omu5nci4bt2m66?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://cartermatt.com/wp-content/uploads/2022/08/Surfside-Girls.webp" alt=""></a>
+          <h5>MYSTERY</h5>
+          <h5>Surfside Girls</h5>
+          <p><i>Beachside best friends investigate a series of
+            supernatural mysteris.</i></p>
+        </div>
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/tehran/umc.cmc.337cdk1ou0bmn6frmzxwm7xqd?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://flxt.tmsimg.com/assets/p22430853_b_h8_ab.jpg" alt=""></a>
+          <h5>DRAMA</h5>
+          <h5>Five days Memorials</h5>
+          <p><i>A tight-knit clan of sisters is investigated
+            for the death of their toxic brother-in-law.</i></p>
+        </div>
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6?ctx_brand=tvs.sbd.4000">
+          <img class="img3" src="https://i.ytimg.com/vi/J35ka2RmbkA/maxresdefault.jpg" alt=""></a>
+          <h5>KIDS & FAMILY</h5>
+          <h5>Lucy's School</h5>
+          <p><i>Lucky learns that teaching is tougher than 
+            she thought is this love letter to education</i></p>
+        </div>
+
+
+
+        <div class="link1">
+          <a href="https://tv.apple.com/us/show/shining-girls/umc.cmc.22xs4xobsimzy5qqdif0rhmdy?ctx_brand=tvs.sbd.4000"><img class="img3" src="https://i.ytimg.com/vi/k31Zgou-5fw/maxresdefault.jpg" alt=""></a>
+          <h5>KIDS & FAMILY</h5>
+          <h5>The Snoopy Show</h5>
+          <p><i>The World -famous beagle is back for a new
+            season of adventure with his pals.</i></p>
+        </div>
+    </div>
+    <h3 id="but">Commonig soon</h3>
+    <h6 id="watch">Add to Up in Your Watch List Today</h6>
+    <div id="comming">
+      <div>
+        <a href="https://tv.apple.com/us/movie/the-greatest-beer-run-ever/umc.cmc.54tpvwt1vapino8t6kulcf2d1?ctx_brand=tvs.sbd.4000">
+          <img class="img4" src="https://www.apple.com/tv-pr/shows-and-films/t/the-greatest-beer-run-ever/images/show-home-graphic-header/key-art-01/16x9/based-on-a-true-story/ATV_The_Greatest_Beer_Run_Ever_key_art_16x9_graphic_header_16_9_show_home.jpg.large_2x.jpg" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="https://tv.apple.com/us/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob?ctx_brand=tvs.sbd.4000">
+          <img class="img4" src="https://www.apple.com/tv-pr/shows-and-films/t/the-problem-with-jon-stewart/images/thumbnail/Apple_TV_The_Problem_With_Jon_Stewart_key_art_main_16_9.jpg" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="https://tv.apple.com/us/movie/raymond--ray/umc.cmc.3mkaxf4ege0ytr5ycan41jzjb?ctx_brand=tvs.sbd.4000">
+          <img class="img5" src="https://www.apple.com/tv-pr/shows-and-films/r/raymond-and-ray/images/show-home-graphic-header/first-look/16x9/Apple_TV_Raymond_Ray_key_art_graphic_header_16_9_show_home.jpg.og.jpg?1660679001907" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="https://tv.apple.com/us/show/sago-mini-friends/umc.cmc.4ckulbycyeuavnlen3du06vvy?ctx_brand=tvs.sbd.4000">
+          <img class="img5" src="https://premiere.news/wp-content/uploads/2022/04/Apple-TV-Orders-Sago-Mini-Friends-Series-Based-on-Award-Winning-780x470.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <h3 id="but">Major League Baseball</h3>
+    <h6 id="watch">Free For a limited time, watch Friday Night Baseball and daily Coverage</h6>
+    <div id="comming">
+      <div>
+        <a href="https://tv.apple.com/us/room/major-league-baseball/edt.item.623c06a6-62cc-4d28-953b-444380dcd9b6?ctx_brand=tvs.sbd.4000">
+          <img class="img4" src="https://external-preview.redd.it/GLVXurHioxnJPzGGT0FH5k-0lkid04DFXg7COugEsQ0.jpg?auto=webp&s=2500906c442d1545ef82f1d8d1e0db2542be29cd" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="https://tv.apple.com/us/room/live-games/edt.item.623c06a6-8a46-4c90-9cf3-5d0e31cd9a3a?ctx_brand=tvs.sbd.4000">
+          <img class="img4" src="https://9to5mac.com/wp-content/uploads/sites/6/2022/03/apple-tv-plus-friday-night-football.jpg?quality=82&strip=all" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="https://tv.apple.com/us/room/daily-coverage/edt.item.623c06a6-75f7-4b8d-95ec-629e5ca42557?ctx_brand=tvs.sbd.4000">
+          <img class="img5" src="https://www.thestreet.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg3OTI2NjQzODA3ODg4NDM1/apple-baseball.jpg" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="https://tv.apple.com/us/room/highlights-and-classics/edt.item.623c06a6-0094-4e85-84a5-5bfc9f79643c?ctx_brand=tvs.sbd.4000">
+          <img class="img5" src="https://cdn.septimaentrada.com/uploads/media/2022/03/08/millonario-mlb-transmitir-juegos-vivo.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="img7" src="https://media.idownloadblog.com/wp-content/uploads/2019/10/Apple-TV-See-poster-001-.jpg" style="width:100%">
+        <div class="text">Binge Season 1 free for a limited time. Sign Up Now to watch Seasons 2 and 3. <br>
+          A Journy Of Survival begins when an army of <br> Witchfinders Attacks the Village of Alkenny <br>
+          A nation that destroys its soils destroys itself. <br> Forests are the lungs of our land, purifying the air and giving fresh strength to our people.
+
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="img7" src="https://www.geekgirlauthority.com/wp-content/uploads/2022/07/See_Banner-1200x640.jpg" style="width:100%">
+        <div class="text">Binge Season 1 free for a limited time. Sign Up Now to watch Seasons 2 and 3. <br>
+          A Special gift for the twins sparks tension in the group <br>
+          The mountains, the forest, and the sea render men savage; <br> they develop the fierce, but yet do not destroy the human.
+
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="img7" src="https://film-book.com/wp-content/uploads/2021/07/see-season-two-tv-show-poster-banner-01-700x400-1.jpg" style="width:100%">
+        <div class="text">Binge Season 1 free for a limited time. Sign Up Now to watch Seasons 2 and 3. <br>
+          In a forest of a hundred thousand trees, <br> no two leaves are alike. <br> And no two journeys along the same path are alike.
+        </div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+      <div id="comming">
+        <div>
+          <a href="https://tv.apple.com/us/room/major-league-baseball/edt.item.623c06a6-62cc-4d28-953b-444380dcd9b6?ctx_brand=tvs.sbd.4000">
+            <img class="img4" src="https://external-preview.redd.it/GLVXurHioxnJPzGGT0FH5k-0lkid04DFXg7COugEsQ0.jpg?auto=webp&s=2500906c442d1545ef82f1d8d1e0db2542be29cd" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://tv.apple.com/us/room/live-games/edt.item.623c06a6-8a46-4c90-9cf3-5d0e31cd9a3a?ctx_brand=tvs.sbd.4000">
+            <img class="img4" src="https://9to5mac.com/wp-content/uploads/sites/6/2022/03/apple-tv-plus-friday-night-football.jpg?quality=82&strip=all" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://tv.apple.com/us/room/daily-coverage/edt.item.623c06a6-75f7-4b8d-95ec-629e5ca42557?ctx_brand=tvs.sbd.4000">
+            <img class="img5" src="https://www.thestreet.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg3OTI2NjQzODA3ODg4NDM1/apple-baseball.jpg" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://tv.apple.com/us/room/highlights-and-classics/edt.item.623c06a6-0094-4e85-84a5-5bfc9f79643c?ctx_brand=tvs.sbd.4000">
+            <img class="img5" src="https://cdn.septimaentrada.com/uploads/media/2022/03/08/millonario-mlb-transmitir-juegos-vivo.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div id="black">
+        <img src="https://www.apple.com/v/apple-tv-plus/ab/images/meta/apple-tv__e7aqjl2rqzau_og.png" alt="">
+        <h1 id="here">Watch Apple TV+ here or anywhere.</h1>
+        <p>Find Apple TV+ on the Apple TV app , available on Apple devices, smart TVs, and more.</p>
+        <p class="supported">See all supported devices ></p>
+        <div id="allimg">
+          <div>
+            <a href=""><img class="img8" src="https://bazarganisib.com/wp-content/uploads/2020/01/Tv.jpg" alt="">
+            </a>
+            <p class="ptag">Apple TV+</p>
+          </div>
+          <div>
+            <a href=""><img class="img8" src="https://witi.com/img/charging.png" alt="">
+            </a>
+            <p class="ptag">iPhone</p>
+          </div>
+          <div>
+            <a href=""><img class="img8" src="https://ak5.picdn.net/shutterstock/videos/7812115/thumb/3.jpg" alt="">
+            </a>
+            <p class="ptag">iPad</p>
+          </div>
+          <div>
+            <a href=""><img class="img8" src="https://as2.ftcdn.net/v2/jpg/02/63/51/95/1000_F_263519536_GO50i8nK2uFH5R5umRjBBndFD32phv5o.jpg" alt="">
+            </a>
+            <p class="ptag1">Mac</p>
+          </div>
+          <div>
+            <a href=""><img class="img8" src="https://cdn-60c35131c1ac185aa47dd21e.closte.com//wp-content/uploads/2017/03/Apple-AirPlay-Icon.jpg" alt="">
+            </a>
+            <p class="ptag1">AirPlay</p>
+          </div>
+        </div>
+        <p id="big"><b>See it on Your big screen .</b></p>
+        <p class="supported" id="set">Set up your device ></p>
+        <p class="supported" id="explore">Explore compactable device ></p>
+
+        <div id="lastimg">
+          <div class="lastimage">
+            <img src="https://static.wixstatic.com/media/3888be_023c3a995eca407b9e89d775151c55f8~mv2.jpg/v1/fill/w_395,h_330,al_c,q_85/3888be_023c3a995eca407b9e89d775151c55f8~mv2.jpg" alt="">
+            <h4 class="str">Streaming Devices</h4>
+            <p class="roku">Roku <br>Fire tv <br> Google Tv <br> Android Tv
+            </p>
+          </div>
+          <div class="lastimage">
+            <img src="https://percipient.co/wp-content/uploads/2021/08/Forensic-Imaging-of-Hard-Drive-Percipient-1200x675.png" alt="">
+            <h4 class="str">Smart TVs </h4>
+            <p class="roku">Samsung <br>LG <br> VIZIO <br>Sony
+            </p>
+          </div>
+          <div class="lastimage">
+            <img src="https://www.pngkey.com/png/full/460-4605662_gaming-icon-png-white.png" alt="">
+            <h4 class="str">Gaming Consoles</h4>
+            <p class="roku">PlayStation<br>Xbox <br> 
+            </p>
+          </div>
+        </div>
+        <p class="roku1">Device availability varies by country or region.</p>
+      </div>
+     
+      <div id="fotter">
+        <h2 id="ans">Question? Answer.</h2>
+        <div>
+          <h1 class="hi" onclick="footer1()">What is the Apple Tv+? <i class="fa-solid fa-chevron-down arrow_down"></i></h1>
+          <p  id="footer_p1">Apple TV+ is a streaming service from Apple .
+            It features exclusive Apple Origional shows and movies from some of the
+             industry's top talent with new premieres arriving each month.
+            Browse all of the available content on Apple TV+ inside the 
+            Apple TV app on the "Apple TV+"tab or here on tv.apple.com .</p>
+        </div>
+        <hr>
+        <div>
+          <h1 class="hi" onclick="footer2()">What does Apple TV+ include.? <i class="fa-solid fa-chevron-down arrow_down1"></i></h1>
+          <p  id="footer_p2">Apple TV+ include Apple Origional filims and series-which 
+            are origional shows and movies made exclusively for Apple .
+            It also includes free access for anyone for anyone to watch 
+            Friday night baseball,provide throw Apple TV+ in partenership 
+            with MLB {Major League Baseball}. New shows and movies are
+            being added to the streaming service often,so browse inside
+            the Aplle TV app or visit tv.apple.com often to see new 
+            releases.</p>
+        </div>
+        <hr>
+        <div>
+          <h1 class="hi" onclick="footer3()">How to watch Apple TV+ on Android or Windows? <i class="fa-solid fa-chevron-down arrow_down2"></i></h1>
+          <p  id="footer_p3">Apple TV+is an exclusive streaming subscription available in
+            the Aplle TV app .you can find Apple TV app on many of your 
+            favorite Apple devices. Plus,find the app on many smart TVs,
+             streming devices,game consoles,and some select cable boxes.</p>
+        </div>
+        <hr>
+        <div>
+          <h1 class="hi" onclick="footer4()">CanI watch Apple TV+ on my phone ? <i class="fa-solid fa-chevron-down arrow_down3"></i></h1>
+          <p  id="footer_p4">Apple TV+ is a streaming service that lives inside 
+            the Apple TV app-an app thatbrings Apple TV+ together with
+            other streaming servicee subscriptions tha you add. 
+            You can find the Apple TV app on iPhone ,iPad,
+             Apple Tv 4K or HD, plus on many streaming devices and
+             smart TVs like Roku,Sumsung,LG Panasonic,and more.
+            </p>
+        </div>
+        <hr>
+        <div>
+          <h1 class="hi" onclick="footer5()">How to watch Apple TV+ on Android or Windows ? <i class="fa-solid fa-chevron-down arrow_down4"></i></h1>
+          <p  id="footer_p5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio veritatis facilis minima, culpa iste provident distinctio, nulla aliquam eaque quia et. Odit molestiae et officiis! Nesciunt illum eius unde fugit.</p>
+        </div>
+        <hr>
+
+        <div>
+          <h1 class="hi" onclick="footer6()">What Movies are on Apple TV+? <i class="fa-solid fa-chevron-down arrow_down5"></i></h1>
+          <p  id="footer_p6"> The easiest way to wath Apple TV+ on an Android phone or
+            Windows device is to visit tv.apple.com.There, you can still
+           sign in with an Apple ID, add aaaaaaaApple Origional shows and
+           movies to your Up Next watchlist, and keep track of what 
+           you're watching .</p>
+        </div>
+        <hr>
+
+        <div>
+          <h1 class="hi" onclick="footer7()">What Movies are on Apple TV+? <i class="fa-solid fa-chevron-down arrow_down6"></i></h1>
+          <p  id="footer_p7">The easiest way to wath Apple TV+ on an Android phone or
+            Windows device is to visit tv.apple.com.There, you can still
+           sign in with an Apple ID, add aaaaaaaApple Origional shows and
+           movies to your Up Next watchlist, and keep track of what 
+           you're watching </p>
+        </div>
+        <hr>
+
+        <div>
+          <h1 class="hi" onclick="footer8()">What can I watch on apple TV+? <i class="fa-solid fa-chevron-down arrow_down7"></i></h1>
+          <p  id="footer_p8">Apple TV+ is a streaming service that lives inside 
+            the Apple TV app-an app thatbrings Apple TV+ together with
+            other streaming servicee subscriptions tha you add. 
+            You can find the Apple TV app on iPhone ,iPad,
+             Apple Tv 4K or HD, plus on many streaming devices and
+             smart TVs like Roku,Sumsung,LG Panasonic,and more.</p>
+        </div>
+        <hr>
+
+        <div>
+          <h1 class="hi" onclick="footer9()">How do i get Apple Tv+? <i class="fa-solid fa-chevron-down arrow_down8"></i></h1>
+          <p  id="footer_p9">Apple TV+ is a streaming service from Apple .
+            It features exclusive Apple Origional shows and movies from some of the
+             industry's top talent with new premieres arriving each month.
+            Browse all of the available content on Apple TV+ inside the 
+            Apple TV app on the "Apple TV+"tab or here on tv.apple.com .</p>
+        </div>
+        <hr>
+
+        <div>
+          <h1 class="hi" onclick="footer10()">Can i get Apple TV+ for free? <i class="fa-solid fa-chevron-down arrow_down9"></i></h1>
+          <p  id="footer_p10">Apple TV+ is a streaming service that lives inside 
+            the Apple TV app-an app thatbrings Apple TV+ together with
+            other streaming servicee subscriptions tha you add. 
+            You can find the Apple TV app on iPhone ,iPad,
+             Apple Tv 4K or HD, plus on many streaming devices and
+             smart TVs like Roku,Sumsung,LG Panasonic,and more.</p>
+        </div>
+        <hr>
+      </div>
+</body>
+</html>
+<script> let show = () => {
+    console.log("show");
+    let log = document.querySelector("#log");
+    log.style.display = "block";
+  };
+  let hide = () => {
+    console.log("hide");
+    let log = document.querySelector("#log");
+    log.style.display = "none";
+  };
+
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+num1=0
+
+let footer1=()=>{
+
+  num1++
+  if(num1%2==1){
+    document.querySelector("#footer_p1").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p1").style.display="none"
+  }
+
+
+}
+num2=0
+
+let footer2=()=>{
+
+  num2++
+  if(num2%2==1){
+    document.querySelector("#footer_p2").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p2").style.display="none"
+  }
+
+
+}
+num3=0
+
+let footer3=()=>{
+
+  num3++
+  if(num3%2==1){
+    document.querySelector("#footer_p3").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p3").style.display="none"
+  }
+
+
+}
+
+num4=0
+
+let footer4=()=>{
+
+  num4++
+  if(num4%2==1){
+    document.querySelector("#footer_p4").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p4").style.display="none"
+  }
+
+
+}
+num5=0
+
+let footer5=()=>{
+
+  num5++
+  if(num5%2==1){
+    document.querySelector("#footer_p5").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p5").style.display="none"
+  }
+
+
+}
+num6=0
+
+let footer6=()=>{
+
+  num6++
+  if(num6%2==1){
+    document.querySelector("#footer_p6").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p6").style.display="none"
+  }
+
+
+}
+num7=0
+
+let footer7=()=>{
+
+  num7++
+  if(num7%2==1){
+    document.querySelector("#footer_p7").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p7").style.display="none"
+  }
+
+
+}
+
+num8=0
+
+let footer8=()=>{
+
+  num8++
+  if(num8%2==1){
+    document.querySelector("#footer_p8").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p8").style.display="none"
+  }
+
+
+}
+num9=0
+
+let footer9=()=>{
+
+  num9++
+  if(num9%2==1){
+    document.querySelector("#footer_p9").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p9").style.display="none"
+  }
+
+
+}
+num10=0
+
+let footer10=()=>{
+
+  num5++
+  if(num10%2==1){
+    document.querySelector("#footer_p10").style.display="block"
+  }
+  else{
+    document.querySelector("#footer_p10").style.display="none"
+  }
+
+
+}
+
+</script>
