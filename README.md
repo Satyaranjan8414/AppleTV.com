@@ -1,4 +1,4 @@
-# Intern_Theory
+# AppleTv.com
 Apple TV is an online store and streaming service that offers access to Apple's library of over 100,000 movies, TV shows, and other content. Apple TV also provides access to streaming services such as Netflix, Hulu, and HBO Now. The Apple TV app is available on select Apple TV devices, as well as on iOS and tvOS devices, and can be used to control the Apple TV.
 
  
