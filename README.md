@@ -18,6 +18,7 @@ My Responsibilty -:
 - about
 -Shows Page
 -Fotter
+- FAQ
 
 
 ## Tech Stack
